@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog',
+    'teanews',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
