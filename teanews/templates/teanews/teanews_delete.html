@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Видалення статті з сайту{% endblock  %}
+
+{% block content %}
+    <div class='container'>
+        <h1>Видалення статті з сайту</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <button class="btn btn-success" type="submit">Видалити статтю</button>
+        </form>
+
+    </div>
+{% endblock  %}

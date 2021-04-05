@@ -5,5 +5,7 @@ urlpatterns = [
     path('', views.teanews_home, name='teanews_home'),
     path('create_text', views.create_text, name='create_text'),
     path('/<int:pk>/', views.NewsDetailView.as_view(), name='news-detail'),
+    path('/<int:pk>/update', views.NewsUpdateView.as_view(), name='news-update'),
+    path('/<int:pk>/delete', views.NewsDeleteView.as_view(), name='news-delete'),
 
 ]
